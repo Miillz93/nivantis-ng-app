@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-6 mx-auto">
+      <!-- Default form login -->
+
+      <form class="text-center border border-light p-5">
+
+        <p class="h4 mb-3">Calculatrice</p>
+        <!-- Nom -->
+        <input type="number" id="defaultRegisterFormPrixAchat" [(ngModel)]="operation.pAchat" name="pAchat" class="form-control mb-3" placeholder="Prix Achat Brut">
+
+        <!--<input type="number" id="defaultRegisterFormNom" class="form-control mb-3" placeholder="Prix Net">
+
+
+        <!-- Prix -->
+        <!--<input type="number" id="defaultRegisterFormNom" class="form-control mb-3" placeholder="Prix Net">
+
+-->
+        <!--<select class="custom-select" name="txRemise" [(ngModel)]="operation.txRemise">
+          <option selected>Open this select menu</option>
+          <option [value]="operation.txRemise.option1">2</option>
+          <option [value]="operation.txRemise.option2">4</option>
+          <option [value]="operation.txRemise.option3">10</option>
+        </select>
+        >-->
+        <input type="number" id="defaultRegisterFormNom" name="txRemise" [(ngModel)]="operation.txRemise" class="form-control mb-3" placeholder="Remise" value="0">
+
+
+        <br>
+        <!-- Sign in button -->
+        <button class="btn btn-info btn-block" (click)="calculTxRemise()">Calcul Taux de Remise</button>
+        <button class="btn btn-info btn-block" (click)="calculAchatNet()" >Calcul Prix Achat Net</button>
+        <button class="btn btn-info btn-block" (click)="calculCMulti()">Calcul Coefficient Multiplaicateur</button>
+        <button class="btn btn-info btn-block" (click)="calculVenteNet()">Calcul Prix de Vente Net</button>
+        <br>
+        <h2 class="">Taux de Remise: {{operation.sum}}</h2>
+        <h2 class="">Prix d'Achat: {{paNet}}</h2>
+        <h2 class="">Coefficient Multiplicateur: {{operation.coefMulti}}</h2>
+        <h2 class="">Prix Vente Net: {{operation.pVente}}</h2>
+
+      </form>
+      <!-- Default form login -->
+    </div>
+  </div>
+</div>

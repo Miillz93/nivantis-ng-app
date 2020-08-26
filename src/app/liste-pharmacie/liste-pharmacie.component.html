@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let listPharmacie of pharmacie"  class="col-md-4 mx-auto mb-3">
+      <div class="card">
+        <div class="card-header">
+          {{listPharmacie.nom}}
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{listPharmacie.matricule}}</li>
+          <li class="list-group-item">{{listPharmacie.gerant}}</li>
+          <li class="list-group-item">{{listPharmacie.adresse}}</li>
+          <li class="list-group-item">{{listPharmacie.ville }}</li>
+          <li class="list-group-item">{{listPharmacie.code}}</li>
+          <li class="list-group-item">{{listPharmacie.region}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

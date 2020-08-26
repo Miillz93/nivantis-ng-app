@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-6 mx-auto">
+
+
+      <!-- Default form login -->
+      <form class="text-center border border-light p-5" (ngSubmit)="createPharmacie()">
+
+        <p class="h4 mb-3">Ajouter Pharmacie</p>
+        <!-- Matricule -->
+        <input type="text" id="defaultRegisterFormMatricule" [(ngModel)]="newPharmacie.matricule" name="matricule" class="form-control mb-3" placeholder="Matricule">
+
+        <!-- Nom -->
+        <input type="text" id="defaultRegisterFormNom" [(ngModel)]="newPharmacie.nom" name="nom" class="form-control mb-3" placeholder="Nom">
+
+        <!-- Gerant -->
+        <input type="text" id="defaultRegisterFormGerant" [(ngModel)]="newPharmacie.gerant" name="gerant" class="form-control mb-3" placeholder="Gerant">
+
+        <!-- Adresse -->
+        <input type="text" id="defaultLoginFormAdresse" [(ngModel)]="newPharmacie.adresse" name="adresse" class="form-control mb-3" placeholder="Adresse">
+
+        <!-- Code Postal -->
+        <input type="number" id="defaultLoginFormCode" [(ngModel)]="newPharmacie.code" name="code" class="form-control mb-3" placeholder="Code Postal">
+
+        <!-- Ville -->
+        <input type="text" id="defaultLoginFormVille" [(ngModel)]="newPharmacie.ville" name="ville" class="form-control mb-3" placeholder="Ville">
+
+        <!-- Region -->
+        <input type="text" id="defaultLoginFormRegion" [(ngModel)]="newPharmacie.region" name="region" class="form-control mb-3" placeholder="Region">
+
+        <!-- Sign in button -->
+        <input class="btn btn-primary" type="submit" value="Envoyer">
+
+      </form>
+      <!-- Default form login -->
+
+      <div>{{newPharmacie.gerant}}</div>
+      <div>{{newPharmacie.nom}}</div>
+    </div>
+  </div>
+</div>
